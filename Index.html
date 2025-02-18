@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রোগ নির্ণয়</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?medical') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        #container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #loading {
+            display: none;
+            width: 50px;
+            margin: 10px auto;
+        }
+        #result {
+            background: white;
+            color: black;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>রোগ নির্ণয় করুন</h1>
+        <input type="text" id="symptom" placeholder="আপনার লক্ষণ লিখুন...">
+        <button onclick="searchDisease()">সার্চ করুন</button>
+        <img id="loading" src="https://i.gifer.com/ZKZg.gif" alt="লোড হচ্ছে...">
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+  </html>
+  
